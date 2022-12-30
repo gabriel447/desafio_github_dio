@@ -1,4 +1,4 @@
-benefícios do git/github
+Benefícios do git/github
 
 1. controle de versão
 2. armazenamento em nuvem
@@ -6,11 +6,11 @@ benefícios do git/github
 4. melhorar seu código
 5. reconhecimento
 
-a interface do Git é CLI (Comand Line interface) e não GUI (graphic user interface)
+A interface do Git é CLI (Command Line interface) e não GUI (graphic user interface)
 isso significa que a forma de utilizá-lo é através de linhas de comandos e não de forma gráfica
 
-o git é um sistema distribuído.
-um sistema distribuído não tem um ponto central, ele se trata de diferentes pontos distíntos 
+O git é um sistema distribuído.
+um sistema distribuído não tem um ponto central, ele possuí pontos distíntos 
 que se juntam para atingir um objetivo em comum e compartilhado.
 
 * criptografia usada no Git:
