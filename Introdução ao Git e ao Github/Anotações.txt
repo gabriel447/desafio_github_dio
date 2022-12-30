@@ -1,2 +1,91 @@
-Link para download do Git: https://git-scm.com/download
-O Git Bash é um terminal extendido para otimiar o uso do Git.
+benefícios do git/github
+
+1. controle de versão
+2. armazenamento em nuvem
+3. trabalho em equipe
+4. melhorar seu código
+5. reconhecimento
+
+a interface do Git é CLI (Comand Line interface) e não GUI (graphic user interface)
+isso significa que a forma de utilizá-lo é através de linhas de comandos e não de forma gráfica
+
+o git é um sistema distribuído.
+um sistema distribuído não tem um ponto central, ele se trata de diferentes pontos distíntos 
+que se juntam para atingir um objetivo em comum e compartilhado.
+
+* criptografia usada no Git:
+SHA1 (Secure Hash Algorithm)
+gera um conjunto de caractéres identificadores de 40 dígitos.
+
+Uma forma curta de representar um arquivo com criptografia SHA1:
+echo "ola mundo" | openssl sha1
+
+Objetos do Git:
+
+blob (binary larg object)
+é o tipo de objeto usado para armazenar o conteúdo de cada arquivo em um repositório
+obs: o hash SHA-1 é armazenado nesse objeto
+
+tree (árvore)
+Um objeto da árvore do Git cria a hierarquia entre arquivos em um repositório do Git.
+
+commit
+Um commit do Git é um instantâneo da hierarquia (tree) e do conteúdo dos arquivos (blob) em um repositório Git.
+
+*chave ssh
+
+tutorial:
+
+1. você gera a chave ssh no prompt e depois adiciona na sua conta online
+2. você da um eval para pegar o agente
+3. depois voce da um add em id_ed25519 para iniciar o agente
+
+ssh-keygen -t ed25519 -C fullstackgabe@gmail.com
+eval $(ssh-agent -s)
+ssh-add id_ed25519
+
+*token de acesso pessoal
+
+você gera esse token no github e salva em algum lugar,
+quando voce for vincular sua conta do github com o prompt você insere o token
+
+* comandos básicos do git
+
+git status
+git init
+git add *
+git add .
+git add nomedoarquivo
+git commit -m ''
+git restore --staged nomedoarquivo
+git push
+
+* configurar usuário para vincular o repositório local com o remoto
+
+git config --global user.email "fullstackgabe@gmail.com"
+git config --global user.name Gabriel447
+
+* GITHUB
+
+comandos para desvincular o usuário atual:
+
+git config --list
+git config --global --unset user.email
+git config --global --unset user.name
+
+comandos para vincular o projeto local com a nuvem:
+
+git remote add origin link
+git remote -v
+git push origin master
+
+comando para clonar repositório online:
+
+git clone linkdoprojeto
+git remote -v
+
+* conflito de merge precisam de uma análise manual
+
+readme.md = markdown language
+
+
